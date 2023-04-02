@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Just Vegan</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/radio.css">
+	<link rel="shortcut icon" href="img/logo.png" />
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	
+</head>
+
+<body>
+
+<div class="loader">
+		<div class="loader_inner"></div>
+</div>
+<div id="notificationSize" class="device-notification">
+  <p class="device-notification--message">Извините, но наш магазин <br> не поддерживает размеры вашего устройства :( <br> Обртитесь в тех.поддержку<br> +7(999)203-87-78</p>
+</div>
+<div id="notificationPlatform" class="device-notification">
+  <p class="device-notification--message">Извините, но наш магазин <br> не поддерживает тип операционной системы вашего устройства, так как заточен только для Android :( <br> Обртитесь в тех.поддержку<br> +7(999)203-87-78 <br> или воспользуйтесь Android устройством</p>
+</div>
+<div class="OrderPage">
+	<div class="header">
+		<div class="basket shadow"></div>
+		<p class="shadow">Уже решил, что хочешь заказать? :)</p>
+	</div>
+	<div id="order1" class="order_main">
+		<div class="prod1 shadow"></div>
+		<div class="nav shadow">
+			<nobr>
+				<button id="prodAdd1" type="button"><span>+</span></button>
+				<input id="prod1Order" placeholder="  0" type="text" disabled>
+				<button id="prodMin1" type="button"><span>-</span></button>
+			</nobr>
+		</div>
+	</div>
+	<div id="order2"  class="order_main">
+		<div class="prod2 shadow"></div>
+		<div class="nav shadow">
+			<nobr>
+				<button id="prodAdd2" type="button"><span>+</span></button>
+				<input id="prod2Order" placeholder="  0" type="text" disabled>
+				<button id="prodMin2" type="button"><span>-</span></button>
+			</nobr>
+		</div>
+	</div>
+	<div id="order3"  class="order_main">
+		<div class="prod3 shadow"></div>
+		<div class="nav shadow">
+			<nobr>
+				<button id="prodAdd3" type="button"><span>+</span></button>
+				<input id="prod3Order" placeholder="  0" type="text" disabled>
+				<button id="prodMin3" type="button"><span>-</span></button>
+			</nobr>
+		</div>
+	</div>
+	<div class="lalala"> <input id="ResultOrder" type="text" disabled placeholder=""> </input></div>
+	<div class="OrderBtn shadow"><button id="OrderBtn" type="button"> Заказать</button></div>
+	<div class="grandDad">
+	<div class="banner">
+		<a href="#resume">
+		<div class="sign"></div>
+		<div class="eyes"></div>
+		<div class="cat"></div>
+		</a>
+	</div>
+	</div>
+</div>
+	
+	
+</div>
+		<form id="myForm"  action="http://formspree.io/serggor49@rambler.ru" class="main_form" method="post" novalidate >
+		<div class="parent">
+			<div class="step1">
+				<a class="step"> 1 из 4</a>
+					<p>Подскажи, как мы можем к тебе обращаться?</p> 
+				<div class="fioParentBlock">
+					<div class="form-group has-feedback nameBlock1">
+						<label class="control-label" for="fio1">	
+						<input id="fio1" type="text" name="Имя: " placeholder="Имя" class="form-control shadow" aria-describedby="inputSuccess2Status"/>
+						</label>
+						<span class="checkCorrection1"></span>
+					</div>
+					<div class="form-group has-feedback nameBlock2">
+						<label class="control-label" for="fio2">	
+						<input id="fio2"  type="text" name="Фамилия: " placeholder="Фамилия" class="form-control shadow" aria-describedby="inputSuccess2Status"/>
+						</label>
+						<span class="checkCorrection2"></span>
+					</div>
+					<div class="errorEmpty"> Заполни пожалуйста оба поля</div>
+				</div>
+				<div class="productOrder">
+						<input id="product1" type="text" name="набор №1 (мини) в количестве: "  class="product" placeholder="пока здесь пусто" />
+						<input id="product2" type="text" name="набор №2 (средний) в количестве: "  class="product" placeholder="пока здесь пусто" />
+						<input id="product3" type="text" name="набор №3 (большой) в количестве: "  class="product" placeholder="пока здесь пусто" />
+						<input id="productResult" type="text" name="Сумма заказа: "  class="product" placeholder="пока здесь пусто" />
+				</div>
+					<button id="submitButton" class="btn btn-success btn-lg shadow" name="submit" type="submit" disabled>Далее</button>
+				
+			</div>
+			<div class="step2">
+				<a class="step"> 2 из 4</a>
+				<div class="waitingForAppend">
+				<p><span id="fioOutput"></span>, куда нам тебе отправить посылку?</p>
+				<div class="region">
+					<select required class=" shadow" >
+						<option disabled> Выберете страну (в разработке)</option>
+						<option  value="RF">Российская Федерация</option>
+						<option  disabled value="UKR">Украина </option>
+						<option  disabled value="KZ">Казахстан</option>
+						<option  disabled value="BEL">Белоруссия</option>
+					</select>
+					<!-- <select class=" shadow" required>
+						<option disabled>Выбирите город</option>
+						<option name="Санкт-Петербург" value="Санкт-Петербург">Санкт-Петербург</option>
+						<option name="Москва" value="Москва">Москва</option>
+					</select> -->
+				
+				<div class="adrindexBlock">
+					<div class="form-group has-feedback adressBlock1">
+						<label class="control-label" for="adress">
+							<input id="adress1" type="text" name="Населенный пункт: " placeholder="Населенный пункт" class="form-control shadow" aria-describedby="inputSuccess2Status" required/>
+						</label>
+						<span class="checkCorrection3"></span>
+					</div>
+					<div class="form-group has-feedback adressBlock2">
+						<label class="control-label" for="adress">
+							<input id="adress2" type="text" name="Улица: " placeholder="Улица, дом, квартира" class="form-control shadow" aria-describedby="inputSuccess2Status" required/>
+						</label>
+						<span class="checkCorrection4"></span>
+					</div>
+					<div class="form-group has-feedback indexBlock">
+						<label class="control-label" for="index">
+							<input id="index" type="text" name="Индекс: " placeholder="Индекс" class="form-control shadow" aria-describedby="inputSuccess2Status" required/>
+						</label>
+						<span class="checkCorrection5"></span>
+					</div>
+				</div>
+				</div>
+					<button id="submitButton2" class="btn btn-success btn-lg shadow" name="submit2" type="submit" disabled>Далее</button>
+					<div class="errorEmpty2"> Заполни все поля пожалуйста </div>
+				</div>
+			</div>
+			<div class="step3">
+				<a class="step"> 3 из 4</a>
+				<p>Как мы можем с тобой связаться?</p>
+				<div class="form-group has-feedback phoneBlock">
+					<label class="control-label" for="phone">	
+					<input id="phone" type="text" name="Телефон: " placeholder="+7(999)203-87-78" class="form-control shadow" aria-describedby="inputSuccess2Status"/>
+					</label>
+					<span class="checkCorrection6"></span>
+				</div>
+				<div class="form-group has-feedback emailBlock">
+					<label class="control-label" for="email">	
+					<input id="email" type="text" name="Email: " placeholder="Email" class="form-control shadow" aria-describedby="inputSuccess2Status"/>
+					</label>
+					<span class="checkCorrection7"></span>
+				</div>
+				<button id="submitButton3" class="btn btn-success btn-lg shadow" name="submit" type="submit" disabled>Далее</button>
+				<div class="errorEmpty3"> Заполни оба поля, пожалуйста </div>
+				<div class="errorEmpty4"> Кажется вы неверно ввели телефон... </div>
+				<div class="errorEmpty5"> Кажется вы неверно ввели email... </div>
+				<div class="errorEmpty6"> Кажется вы неверно заполнили оба поля... </div>
+			</div>
+			<div class="step4">
+				<a class="step"> 4 из 4</a>
+				<p class="pap">Выбери нужный способ оплаты и на этом закончим :)</p>
+				<div class="pay">
+				<p>
+					<label >
+						<input class="radio" id="sber" name="payment" type="radio" value="Sber">
+						<span class="radio-custom"></span>
+						<span class="label">Сбербанк</span>
+                	</label>
+				</p>
+				<p>
+					<label >
+						<input class="radio" id="tink" name="payment" type="radio" value="Tinkoff">
+						<span class="radio-custom"></span>
+						<span class="label">Тинькофф</span>
+                	</label>
+				</p>
+				<p>
+					<label >
+						<input class="radio" id="yan" name="payment" type="radio" value="Yandex">
+						<span class="radio-custom"></span>
+						<span class="label">Яндекс.Деньги</span>
+                	</label>
+				</p>
+				<p>
+					<label >
+						<input class="radio" id="qiwi" name="payment" type="radio" value="Qiwi">
+						<span class="radio-custom"></span>
+						<span class="label">Qiwi</span>
+                	</label>
+				</p>
+				</div>
+					<div class="paysend">
+						<input id="paysend" type="text" name="Всё отлично, оплата: "  class="opacity0">
+					</div>
+				<button id="submitButton4" class="btn btn-success btn-lg shadow" name="submit" type="submit" disabled>Готово</button>
+			</div>
+				
+			
+			</div>
+		</form>
+
+
+<footer>
+	<div id="resume" class="BlockPlate">
+		<div class="me"><span> Designed & hosted <br> by <br></span><h1>Ilay Salem</h1>
+		<a href="http://vk.com/kentuckychicken" class="fa fa-vk" aria-hidden="true"></a>
+		<a href="http://t.me/IlaySalem" class="fa fa-send" aria-hidden="true"></a>
+		<a href="http://kedevra@bk.ru" class="fa fa-envelope" aria-hidden="true"></a>
+		</div>
+		 
+		
+	</div>
+<!-- 	<a href="vk.com/kentuckychicken"> -->
+</footer>
+
+
+	<!-- <div class="banner">
+		<div class="sign"></div>
+		<div class="cat"></div>
+		
+		<div class="footer">
+			<div class="BlockPlate">
+				<div class="me"><span> Designed & hosted <br> by <br></span><h1>Ilay Salem</h1>
+					<a href="http://vk.com/kentuckychicken" class="fa fa-vk" aria-hidden="true"></a>
+					<a href="http://t.me/IlaySalem" class="fa fa-send" aria-hidden="true"></a>
+					<a href="http://kedevra@bk.ru" class="fa fa-envelope" aria-hidden="true"></a>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter47739028 = new Ya.Metrika({
+                    id:47739028,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/47739028" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+
+
+
+
+
+
+	
+<script src="js/libs.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/device.js"></script>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<!-- <script src="js/.js"></script> -->
+<script src="libs/jqBootstrapValidation/dist/js/jqBootstrapValidation.js"></script>
+</body>
+</html>
